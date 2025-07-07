@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lost & Found Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>College Lost & Found</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="report-lost.html">Report Lost</a>
+      <a href="report-found.html">Report Found</a>
+      <a href="search.html">Search Items</a>
+      <a href="auction.html">Auction</a>
+      <a href="admin.html">Admin</a>
+      <a href="faq-contact.html">Help / Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>Welcome to the College Lost & Found</h2>
+      <p>Report lost or found items, search for your belongings, or participate in our auction system for unclaimed items.</p>
+    </section>
+
+    <section id="quick-links">
+      <button onclick="location.href='report-lost.html'">Report Lost Item</button>
+      <button onclick="location.href='report-found.html'">Report Found Item</button>
+      <button onclick="location.href='search.html'">Search Items</button>
+    </section>
+
+    <section id="login">
+      <h3>Login</h3>
+      <form id="loginForm">
+        <label for="collegeID">College ID:</label>
+        <input type="text" id="collegeID" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p><a href="#">Sign Up</a> | <a href="#">Forgot Password?</a></p>
+    </section>
+
+    <section id="recent-items">
+      <h3>Recent Lost & Found</h3>
+      <ul id="recentList">
+        <!-- Recent items will be loaded via JS -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 College Lost & Found | <a href="terms.html">Terms & Privacy</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
